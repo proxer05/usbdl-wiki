@@ -1,0 +1,16 @@
+title: Unbricking Guide
+description: A step-by-step guide for recovering your device.
+# CHANGE 'theme' TO 'remote_theme'
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+# Mermaid support for flowcharts and diagrams in Markdown pages
+mermaid:
+  version: "10.9.1"
+
+# Update this to your own GitHub Pages URL
+url: https://proxer05.github.io/usbdl-wiki
+
+aux_links:
+  Project Repository: https://github.com/proxer05/usbdl-wiki/
