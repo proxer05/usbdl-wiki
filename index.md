@@ -31,7 +31,8 @@ flowchart TD
     W{First time booting using Tensor USBDL?}-->|yes| J
     W -->|no| M
     J["Wait patiently few hours(recommended to leave it for night) until you see fastboot screen"]
-    J --> M{Device state: Error!}
+    J --> M{"Device state: Error!(Click me!)"}
+    click M href "https://raw.githubusercontent.com/proxer05/usbdl-wiki/main/pics/error-screen.png" "Open Image"
     N --> P[Reboot and enjoy fixed device]
     M -->|No| N[Flash stock ROM]
     M -->|yes| K[Disconnect device from PC and connect to charger for another few hours]
