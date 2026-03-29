@@ -27,13 +27,16 @@ flowchart TD
     F --> I[Wait until you see Acknowleged BL3B]
     G --> I 
     H --> I
-    I --> M
-    M{Device state: Error!} -->|yes| J["Wait patiently few hours(recommended to leave it for night) until you see fastboot screen"]
-    M -->|No| N[Flash stock ROM]
+    I --> W
+    W{First time booting using Tensor USBDL?}-->|yes| J
+    W -->|no| M
+    J["Wait patiently few hours(recommended to leave it for night) until you see fastboot screen"]
+    J --> M{Device state: Error!}
     N --> P[Reboot and enjoy fixed device]
-    J --> K[Disconnect device from PC and connect to charger for another few hours]
-    K --> L[Reboot device]
+    M -->|No| N[Flash stock ROM]
+    M -->|yes| K[Disconnect device from PC and connect to charger for another few hours]
     L --> A
+    K --> L[Reboot device]
 
 ~~~
 
