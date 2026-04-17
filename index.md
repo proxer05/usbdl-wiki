@@ -22,8 +22,8 @@ flowchart TD
     D --> A
     C --> E{"Select your device:"}
     E -->|"Pixel 7 Series(Tensor G2)"| F[gs201]
-    E -->|Pixel 8| G[gs301/shiba]
-    E -->|Pixel 8 Pro| H[gs301/husky]
+    E -->|Pixel 8| G[zuma/shiba]
+    E -->|Pixel 8 Pro| H[zuma/husky]
     F --> I[Wait until you see Acknowleged BL3B]
     G --> I 
     H --> I
