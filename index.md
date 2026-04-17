@@ -14,6 +14,9 @@ Ensure you have the ADB/Fastboot drivers installed on your PC.
 ---
 ## Unbrick steps
 
+Pixel 7(a/pro) and Pixel Fold(1st gen) MUST hold all 3 buttons and make sure the device asks for BL1 first. After it asks for DPM, you can release the buttons and it'll boot into fastboot without errors!
+{: .label .label-red }
+
 ~~~mermaid
 flowchart TD
     A[Connect the device via USB while holding Power and Volume Down.] --> B["Pixel ROM Recovery/COM port visible in device manager."]
